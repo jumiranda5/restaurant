@@ -65,7 +65,6 @@ function createNavItem(name, nav_container) {
 function updateContent(btn, page, content) {
 
     if (!btn.classList.contains("active")) {
-        console.log("update tab");
         const container = document.getElementById("tab-content");
         container.remove();
         content.appendChild(page);
@@ -77,7 +76,6 @@ function setActive(btn) {
     const navButtons = document.querySelectorAll(".nav-btn");
 
     for (let i = 0; i < navButtons.length; i++) {
-        console.log(navButtons[i].classList);
         if (navButtons[i] !== btn) {
             navButtons[i].classList.remove("active");
         } 
