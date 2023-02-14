@@ -1,1 +1,3 @@
-console.log("Hello");
+import initLayout from "./layout.js"
+
+initLayout();
