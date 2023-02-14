@@ -1,5 +1,6 @@
 import home from "./home";
 import menu from "./menu";
+import contact from "./contact";
 
 function initLayout() {
 
@@ -22,6 +23,7 @@ function initLayout() {
 
     content.appendChild(home());
     content.appendChild(menu());
+    content.appendChild(contact());
 
 }
 
