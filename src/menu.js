@@ -10,6 +10,7 @@ const menu = () => {
     addItem("Item 6", menu_list);
 
     menu_list.setAttribute("id", "tab-content");
+    menu_list.classList.add("menu");
 
     return menu_list;
 

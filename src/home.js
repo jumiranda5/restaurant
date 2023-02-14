@@ -9,10 +9,11 @@ const home = () => {
 
     title.textContent = "Cafe and espresso bar.";
     description.textContent = "A great place to start your day, have a break or have a conversation.";
-    opening_hours.innerHTML = "Open from Monday to Saturday,<br>from 6am to 20pm.";
+    opening_hours.innerHTML = "Open from <span>Monday</span> to <span>Saturday</span>,<br>from <span>6am</span> to <span>20pm</span>.";
     address.textContent = "Cafeteria Street, 404 - Nowhere"; 
 
     container.setAttribute("id", "tab-content");
+    container.classList.add("home-container");
     container.appendChild(title);
     container.appendChild(description);
     container.appendChild(opening_hours);
