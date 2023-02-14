@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst home = () => {\n\n    // elements\n    const container = document.createElement(\"div\");\n    const title = document.createElement(\"h2\");\n    const description = document.createElement(\"p\");\n    const opening_hours = document.createElement(\"p\");\n    const address = document.createElement(\"p\");\n\n    title.textContent = \"Cafe and espresso bar.\";\n    description.textContent = \"A great place to start your day, have a break or have a conversation.\";\n    opening_hours.innerHTML = \"Open from Monday to Saturday,<br>from 6am to 20pm.\";\n    address.textContent = \"Cafeteria Street, 404 - Nowhere\"; \n\n    container.appendChild(title);\n    container.appendChild(description);\n    container.appendChild(opening_hours);\n    container.appendChild(address);\n\n    return container;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\n\n//# sourceURL=webpack://restaurant/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lay
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\nfunction initLayout() {\n\n    const content = document.getElementById('content');\n\n    // header\n    const header = document.createElement(\"header\");\n    const title = document.createElement(\"h1\");\n    title.textContent = \"The Cafe\";\n\n    // Nav\n    const nav = document.createElement(\"ul\");\n    createNavItem(\"Home\", nav);\n    createNavItem(\"Menu\", nav);\n    createNavItem(\"Contact\", nav);\n\n    header.appendChild(title);\n    header.appendChild(nav);\n    content.appendChild(header);\n\n}\n\nfunction createNavItem(name, nav_container) {\n    const item = document.createElement(\"li\");\n    const btn = document.createElement(\"button\");\n    btn.textContent = name;\n    btn.setAttribute(\"type\", \"button\");\n    item.appendChild(btn);\n    nav_container.appendChild(item);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initLayout);\n\n//# sourceURL=webpack://restaurant/./src/layout.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\nfunction initLayout() {\n\n    const content = document.getElementById('content');\n\n    // header\n    const header = document.createElement(\"header\");\n    const title = document.createElement(\"h1\");\n    title.textContent = \"The Cafe\";\n\n    // Nav\n    const nav = document.createElement(\"ul\");\n    createNavItem(\"Home\", nav);\n    createNavItem(\"Menu\", nav);\n    createNavItem(\"Contact\", nav);\n\n    header.appendChild(title);\n    header.appendChild(nav);\n    content.appendChild(header);\n\n    content.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n}\n\nfunction createNavItem(name, nav_container) {\n    const item = document.createElement(\"li\");\n    const btn = document.createElement(\"button\");\n    btn.textContent = name;\n    btn.setAttribute(\"type\", \"button\");\n    item.appendChild(btn);\n    nav_container.appendChild(item);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initLayout);\n\n//# sourceURL=webpack://restaurant/./src/layout.js?");
 
 /***/ })
 

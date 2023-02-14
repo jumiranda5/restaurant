@@ -1,3 +1,4 @@
+import home from "./home";
 
 function initLayout() {
 
@@ -17,6 +18,8 @@ function initLayout() {
     header.appendChild(title);
     header.appendChild(nav);
     content.appendChild(header);
+
+    content.appendChild(home());
 
 }
 
