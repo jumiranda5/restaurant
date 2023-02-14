@@ -12,6 +12,7 @@ const home = () => {
     opening_hours.innerHTML = "Open from Monday to Saturday,<br>from 6am to 20pm.";
     address.textContent = "Cafeteria Street, 404 - Nowhere"; 
 
+    container.setAttribute("id", "tab-content");
     container.appendChild(title);
     container.appendChild(description);
     container.appendChild(opening_hours);

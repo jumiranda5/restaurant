@@ -9,8 +9,10 @@ const menu = () => {
     addItem("Item 5", menu_list);
     addItem("Item 6", menu_list);
 
+    menu_list.setAttribute("id", "tab-content");
+
     return menu_list;
-    
+
 }
 
 function addItem(name, container) {
